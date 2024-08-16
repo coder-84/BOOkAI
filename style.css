@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A082A;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+body.light header,
+body.light footer,
+body.light .pricing {
+    background-color: #FFF;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 2.5em;
+    margin-left: 10px;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.login {
+    background-color: #4E30AB;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a.login:hover {
+    background-color: #38207d; 
+}
+
+.hero {
+    padding: 150px 20px;
+    background-color: #1A082A;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.hero .highlight {
+    color: #8960EF;
+    text-decoration: underline;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cta-buttons .btn {
+    background-color: #5C5FE8;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #4E30AB;
+    transform: translateY(-3px);
+}
+
+footer {
+    padding: 30px 20px;
+    background-color: #1A082A;
+    margin-top: 40px;
+}
+footer p.attention {
+    color: #cdcd55; 
+    font-size: 1.4em; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.pricing {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c334a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.pricing h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+thead {
+    background-color: #3f4a67;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    color: #e0e6f0;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #3f4a67;
+}
+
+.token-estimation, .billing {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-top: 1px solid #3f4a67;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.token-estimation h2, .billing h2 {
+    font-size: 1.5em;
+    color: #a8b4ef;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.token-estimation p, .billing p {
+    color: #e0e6f0;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+body.light .theme-toggle {
+    color: #333;
+}
+
+body.light nav a {
+    color: #333;
+}
+
+body.light nav a.login {
+    background-color: #8960EF;
+}
+
+body.light nav a.login:hover {
+    background-color: #5C5FE8;
+}
+
+body.light .hero .highlight {
+    color: #4E30AB;
+}
